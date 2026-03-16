@@ -8,7 +8,7 @@ todos = [
 
 @app.route('/todos', methods=['GET'])
 def hello_world():
-    return todos
+    return jsonify(todos)
 
 @app.route('/todos', methods=['POST'])
 def add_new_todo():
